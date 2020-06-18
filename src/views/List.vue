@@ -18,7 +18,7 @@
                     @load="onLoad"
                     >
                     <ul>
-                        <li v-for="(item, index) in goodsList" :key="index">
+                        <li v-for="(item, index) in goodsList" :key="index"  @click="$router.push({params:{'id': item.id},name:'Detail'})">
                             <img :src="item.pic" alt="" v-lazy="item.pic">
                             <p class="name">{{item.name}}</p>
                             <p class="price">¥{{item.price}}</p>
@@ -30,12 +30,14 @@
             </van-tab>
           </van-tabs>
       </div>
+      <BackTop></BackTop>
   </div>
 </template>
 
 <script>
 import Search from '@/components/Search.vue'
 import GoodsList from '@/components/GoodsList.vue'
+import BackTop from '@/components/BackTop.vue'
 import { Lazyload, Tab, Tabs,List  } from 'vant'
 import Vue from 'vue'
 Vue.use(Lazyload).use(Tab).use(Tabs).use(List);
@@ -63,7 +65,7 @@ export default {
         immediate: true  //初始化执行
     }
   },
-  components: {Search,GoodsList},
+  components: {Search,GoodsList,BackTop},
   async mounted () {
       let id = this.$route.params.id;
       //获取分类数据

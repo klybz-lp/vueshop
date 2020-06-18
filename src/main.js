@@ -8,8 +8,8 @@ import * as filters from './filters'  //全局过滤器
 import './assets/css/reset.css'  /*引入公共样式*/
 
 // 按需引入vant组件
-import { Icon, Button, Grid, GridItem,Tabbar, TabbarItem, Search, Lazyload, Cell, CellGroup, Row, Col, Tag, List, Dialog, Toast, Empty,Skeleton } from 'vant'
-Vue.use(Icon).use(Button).use(Grid).use(GridItem).use(Tabbar).use(TabbarItem).use(Search).use(Cell).use(CellGroup).use(Row).use(Col).use(Tag).use(List).use(Dialog).use(Empty).use(Skeleton);
+import { Icon, Button, Grid, GridItem,Tabbar, TabbarItem, Search, Lazyload, Cell, CellGroup, Row, Col, Tag, List, Dialog, Toast, Empty,Skeleton,NavBar } from 'vant'
+Vue.use(Icon).use(Button).use(Grid).use(GridItem).use(Tabbar).use(TabbarItem).use(Search).use(Cell).use(CellGroup).use(Row).use(Col).use(Tag).use(List).use(Dialog).use(Empty).use(Skeleton).use(NavBar).use(Toast);
 Vue.use(Lazyload, {
   preLoad: 1.3,
   error: 'dist/error.png',

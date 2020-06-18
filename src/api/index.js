@@ -7,13 +7,13 @@
 import home from '@/api/home'
  // 列表模块接口
 import list from '@/api/list'
-// 文章模块接口
-//import article from '@/api/article';
+// 详情模块接口
+import detail from '@/api/detail';
 // 其他模块的接口……
 
 // 导出接口
 export default {
     home,
     list,
-    // ……
+    detail,
 }

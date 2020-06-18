@@ -6,6 +6,7 @@ import Cart from '../views/Cart.vue'
 import About from '../views/About.vue'
 import Goods from '../views/Goods.vue'
 import List from '../views/List.vue'
+import Detail from '../views/Detail.vue'
 
 Vue.use(VueRouter)
 
@@ -45,6 +46,11 @@ Vue.use(VueRouter)
     path: '/goods/:id',
     name: 'Goods',
     component: Goods
+  },
+  {
+    path: '/detail/:id',
+    name: 'Detail',
+    component: Detail
   }
 ]
 

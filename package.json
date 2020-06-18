@@ -9,8 +9,11 @@
   "dependencies": {
     "antd": "^4.2.5",
     "axios": "^0.19.2",
+    "better-scroll": "^2.0.0-beta.10",
     "core-js": "^3.6.4",
     "element-ui": "^2.13.2",
+    "html2canvas": "^1.0.0-rc.5",
+    "qrcodejs2": "0.0.2",
     "swiper": "^5.4.1",
     "vant": "^2.8.2",
     "vue": "^2.6.11",
