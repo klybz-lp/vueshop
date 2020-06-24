@@ -1,7 +1,7 @@
 <template>
   <transition name='slide-fade'>
     <div class='page-component-up' v-if='isShow' @click='getTop'>
-      <img src="../assets/images/top.png" alt="">
+      <img src="~@/assets/images/top.png" alt="">
       <i class="el-icon-caret-top"></i>
     </div>
   </transition>

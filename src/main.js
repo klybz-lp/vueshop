@@ -5,7 +5,6 @@ import store from './store'
 import api from './api' // 导入api接口
 import "@/utils/rem"  //pxtorem
 import * as filters from './filters'  //全局过滤器
-import './assets/css/reset.css'  /*引入公共样式*/
 
 // 按需引入vant组件
 import { Icon, Button, Grid, GridItem,Tabbar, TabbarItem, Search, Lazyload, Cell, CellGroup, Row, Col, Tag, List, Dialog, Toast, Empty,Skeleton,NavBar } from 'vant'

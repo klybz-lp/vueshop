@@ -7,14 +7,17 @@ import About from '../views/About.vue'
 import Goods from '../views/Goods.vue'
 import List from '../views/List.vue'
 import Detail from '../views/Detail.vue'
+import Error from '../views/Error.vue'
+
+//建议使用懒加载
+//const Home = () => Promise.resolve({ /* 组件定义对象 */ })
 
 Vue.use(VueRouter)
 
   const routes = [
   {
     path: '/',
-    name: 'Home',
-    component: Home
+    redirect: Home
   },
   {
     path: '/home',
@@ -51,10 +54,16 @@ Vue.use(VueRouter)
     path: '/detail/:id',
     name: 'Detail',
     component: Detail
-  }
+  },
+  {
+    path: '*',  //404页面
+    component: Error,
+    
+  },
 ]
 
 const router = new VueRouter({
+  mode: "history",  //默认路由模式是hash,注意history模式时，直接访问首页链接之外的链接会报错，回到顶部图片问题
   routes
 })
 
